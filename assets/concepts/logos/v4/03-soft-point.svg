@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 96 96" role="img" aria-labelledby="title desc">
+  <title id="title">Commonity icon — Soft Point</title>
+  <desc id="desc">A tall conversation pin with a softened tip and a more open C.</desc>
+  <rect width="96" height="96" rx="22" fill="#0DD5B2"/>
+  <path d="M48 9C27.6 9 12 24.7 12 44.3 12 62.7 25.1 76.9 45.7 90.4Q48 92.7 50.3 90.4C70.9 76.9 84 62.7 84 44.3 84 24.7 68.4 9 48 9Z" fill="#fff"/>
+  <path d="M61 33.5C57.3 30.1 52.5 28.5 47.1 28.5 36.6 28.5 29 36.7 29 47.2S36.6 66 47.1 66c5.4 0 10.2-1.6 13.9-5" transform="translate(1.5 0)" fill="none" stroke="#0DD5B2" stroke-width="8.2" stroke-linecap="round"/>
+</svg>

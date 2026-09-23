@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 96 96" role="img" aria-labelledby="title desc">
+  <title id="title">Commonity icon</title>
+  <desc id="desc">A centered white conversation pin with a green C on a mint green rounded square.</desc>
+  <rect width="96" height="96" rx="24" fill="#0DD5B2"/>
+  <path d="M48 15C29.75 15 15 29.2 15 46.4c0 15.2 13.65 25.8 31.5 34.05Q48 81.55 49.5 80.45C67.35 72.2 81 61.6 81 46.4 81 29.2 66.25 15 48 15Z" fill="#fff"/>
+  <path d="M65 36C60.5 32.2 55 31 48 31 38.6 31 31 38.6 31 48s7.6 17 17 17c7 0 12.5-1.2 17-5" fill="none" stroke="#0DD5B2" stroke-width="8" stroke-linecap="round"/>
+</svg>

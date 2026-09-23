@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Commonity — Conversation Pin v4</title>
+  <style>
+    :root { font-family: "Avenir Next", Inter, "Helvetica Neue", Arial, sans-serif; color: #173f38; background: #f4f8f6; }
+    * { box-sizing: border-box; }
+    body { margin: 0; }
+    main { max-width: 1180px; padding: 48px 20px 72px; margin: auto; }
+    .eyebrow { margin: 0 0 8px; color: #087c69; font-size: 12px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
+    h1 { margin: 0; font-size: clamp(32px, 5vw, 52px); font-weight: 600; letter-spacing: -.04em; }
+    .intro { max-width: 680px; margin: 12px 0 32px; color: #5d786f; font-size: 16px; line-height: 1.5; }
+    .grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; }
+    article { min-width: 0; padding: 25px; background: #fff; border: 1px solid #e1ede8; border-radius: 20px; }
+    .icon { display: block; width: min(100%, 210px); aspect-ratio: 1; margin: 0 auto 24px; }
+    .mini { display: flex; align-items: center; gap: 10px; min-height: 38px; margin-bottom: 18px; color: #6c857d; font-size: 12px; }
+    .mini img { width: 32px; height: 32px; }
+    h2 { margin: 0 0 6px; font-size: 18px; letter-spacing: -.02em; }
+    p { margin: 0; }
+    .description { min-height: 66px; color: #5d786f; font-size: 14px; line-height: 1.45; }
+    .links { display: flex; gap: 14px; margin-top: 15px; }
+    a { color: #087c69; font-size: 13px; font-weight: 700; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+    @media (max-width: 900px) { .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+    @media (max-width: 520px) { .grid { grid-template-columns: 1fr; } .description { min-height: 0; } }
+  </style>
+</head>
+<body>
+  <main>
+    <p class="eyebrow">Logo exploration / v4</p>
+    <h1>Conversation Pin</h1>
+    <p class="intro">Three icon-only refinements beside the original v1 reference. Each keeps the taller pin shape and Yik Yak-inspired green.</p>
+    <div class="grid">
+      <article>
+        <img class="icon" src="../v1/02-conversation-pin-app-icon.svg" alt="Original v1 Conversation Pin icon">
+        <div class="mini"><span>At 32 px</span><img src="../v1/02-conversation-pin-app-icon.svg" alt=""></div>
+        <h2>v1 reference</h2>
+        <p class="description">The original proportions and C placement.</p>
+      </article>
+      <article>
+        <img class="icon" src="01-familiar-balance.svg" alt="Familiar Balance Commonity icon">
+        <div class="mini"><span>At 32 px</span><img src="01-familiar-balance.svg" alt=""></div>
+        <h2>01 / Familiar Balance</h2>
+        <p class="description">The v1 pin with a small C adjustment for visual balance.</p>
+        <div class="links"><a href="01-familiar-balance.svg" download>SVG</a><a href="01-familiar-balance.png" download>PNG</a></div>
+      </article>
+      <article>
+        <img class="icon" src="02-airy-conversation.svg" alt="Airy Conversation Commonity icon">
+        <div class="mini"><span>At 32 px</span><img src="02-airy-conversation.svg" alt=""></div>
+        <h2>02 / Airy Conversation</h2>
+        <p class="description">A slightly smaller C leaves more white space in the same tall pin.</p>
+        <div class="links"><a href="02-airy-conversation.svg" download>SVG</a><a href="02-airy-conversation.png" download>PNG</a></div>
+      </article>
+      <article>
+        <img class="icon" src="03-soft-point.svg" alt="Soft Point Commonity icon">
+        <div class="mini"><span>At 32 px</span><img src="03-soft-point.svg" alt=""></div>
+        <h2>03 / Soft Point</h2>
+        <p class="description">A gently rounded pin tip and a more open C.</p>
+        <div class="links"><a href="03-soft-point.svg" download>SVG</a><a href="03-soft-point.png" download>PNG</a></div>
+      </article>
+    </div>
+  </main>
+</body>
+</html>
