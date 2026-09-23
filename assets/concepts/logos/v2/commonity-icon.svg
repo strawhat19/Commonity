@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 96 96" role="img" aria-labelledby="title desc">
+  <title id="title">Commonity icon</title>
+  <desc id="desc">A white location pin containing a green open C on a mint green rounded square.</desc>
+  <rect width="96" height="96" rx="24" fill="#0DD5B2"/>
+  <path d="M48 13C30.3 13 17 26 17 43.3c0 16.6 12.4 29.3 28.7 40.5Q48 85.4 50.3 83.8C66.6 72.6 79 59.9 79 43.3 79 26 65.7 13 48 13Z" fill="#fff"/>
+  <path d="M59.5 34.5c-3.1-3.6-7.2-5.2-12-5.2-9.9 0-17.3 7.3-17.3 16.9s7.4 16.9 17.3 16.9c4.8 0 8.9-1.6 12-5.2" transform="translate(3.5 0)" fill="none" stroke="#0DD5B2" stroke-width="7.8" stroke-linecap="round"/>
+</svg>

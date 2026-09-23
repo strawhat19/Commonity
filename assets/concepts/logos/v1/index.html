@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Commonity — logo concepts v1</title>
+  <style>
+    :root { color-scheme: light; font-family: "Avenir Next", Inter, "Helvetica Neue", Arial, sans-serif; color: #173f38; background: #f4f8f6; }
+    * { box-sizing: border-box; }
+    body { margin: 0; }
+    main { width: min(1120px, calc(100% - 40px)); margin: 0 auto; padding: 62px 0 80px; }
+    header { margin-bottom: 38px; }
+    .eyebrow { margin: 0 0 10px; color: #087c69; font-size: 12px; font-weight: 750; letter-spacing: .16em; text-transform: uppercase; }
+    h1 { margin: 0; font-size: clamp(34px, 5vw, 54px); letter-spacing: -.045em; line-height: 1.08; }
+    header p:last-child { color: #58746b; margin: 14px 0 0; font-size: 17px; }
+    .grid { display: grid; gap: 22px; }
+    article { display: grid; grid-template-columns: minmax(0, 1fr) 188px; gap: 0; background: #fff; border: 1px solid #e3eeea; border-radius: 22px; overflow: hidden; box-shadow: 0 8px 32px #1d50300b; }
+    .logo-area { padding: 30px 34px 24px; min-width: 0; }
+    .logo-area img { display: block; width: min(100%, 570px); height: auto; }
+    .icon-area { display: grid; align-content: center; justify-items: center; gap: 11px; background: #ecf9f5; padding: 26px; }
+    .icon-area img { display: block; width: 108px; height: 108px; border-radius: 25px; box-shadow: 0 12px 20px #118f7921; }
+    .icon-area span { color: #53736a; font-size: 12px; font-weight: 650; }
+    .details { display: flex; align-items: baseline; justify-content: space-between; gap: 18px; padding: 0 34px 27px; }
+    .details h2 { font-size: 19px; margin: 0 0 5px; letter-spacing: -.025em; }
+    .details p { margin: 0; color: #638077; font-size: 14px; line-height: 1.45; }
+    .links { display: flex; flex-shrink: 0; gap: 14px; }
+    a { color: #087c69; text-decoration-thickness: 1px; text-underline-offset: 3px; font-size: 13px; font-weight: 700; }
+    footer { margin-top: 28px; color: #6b857c; font-size: 13px; }
+    @media (max-width: 700px) {
+      main { width: min(100% - 24px, 540px); padding-top: 38px; }
+      article { grid-template-columns: 1fr; }
+      .logo-area { padding: 16px 20px 0; }
+      .icon-area { display: flex; justify-content: flex-start; align-items: center; gap: 14px; padding: 16px 22px; border-top: 1px solid #e3eeea; }
+      .icon-area img { width: 72px; height: 72px; border-radius: 17px; }
+      .details { display: block; padding: 0 22px 24px; }
+      .links { margin-top: 14px; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <p class="eyebrow">Logo exploration / v1</p>
+      <h1>Commonity</h1>
+      <p>Community in Common. Three simple directions for a local, anonymous community app.</p>
+    </header>
+    <div class="grid">
+      <article>
+        <div>
+          <div class="logo-area"><img src="01-shared-c-logo.svg" alt="Shared C logo for Commonity"></div>
+          <div class="details"><div><h2>01 / Shared C</h2><p>One open community, with a point for each voice.</p></div><div class="links"><a href="01-shared-c-logo.svg" download>Logo SVG</a><a href="01-shared-c-app-icon.svg" download>Icon SVG</a></div></div>
+        </div>
+        <div class="icon-area"><img src="01-shared-c-app-icon.svg" alt="Shared C app icon"><span>App icon</span></div>
+      </article>
+      <article>
+        <div>
+          <div class="logo-area"><img src="02-conversation-pin-logo.svg" alt="Conversation Pin logo for Commonity"></div>
+          <div class="details"><div><h2>02 / Conversation Pin</h2><p>Local conversation, expressed in one compact symbol.</p></div><div class="links"><a href="02-conversation-pin-logo.svg" download>Logo SVG</a><a href="02-conversation-pin-app-icon.svg" download>Icon SVG</a></div></div>
+        </div>
+        <div class="icon-area"><img src="02-conversation-pin-app-icon.svg" alt="Conversation Pin app icon"><span>App icon</span></div>
+      </article>
+      <article>
+        <div>
+          <div class="logo-area"><img src="03-common-ground-logo.svg" alt="Common Ground logo for Commonity"></div>
+          <div class="details"><div><h2>03 / Common Ground</h2><p>Different local groups gathered around one shared place.</p></div><div class="links"><a href="03-common-ground-logo.svg" download>Logo SVG</a><a href="03-common-ground-app-icon.svg" download>Icon SVG</a></div></div>
+        </div>
+        <div class="icon-area"><img src="03-common-ground-app-icon.svg" alt="Common Ground app icon"><span>App icon</span></div>
+      </article>
+    </div>
+    <footer>Primary green: #0DD5B2 · Editable vector SVGs</footer>
+  </main>
+</body>
+</html>

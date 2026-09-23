@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="176" viewBox="0 0 520 176" role="img" aria-labelledby="title desc">
+  <title id="title">Commonity — Common Ground logo</title>
+  <desc id="desc">Four mint green corners face a shared center point, followed by the Commonity name and tagline.</desc>
+  <g transform="translate(18 40)" fill="none" stroke="#0DD5B2" stroke-width="11" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M39 15H27A12 12 0 0 0 15 27v12"/>
+    <path d="M57 15h12a12 12 0 0 1 12 12v12"/>
+    <path d="M81 57v12a12 12 0 0 1-12 12H57"/>
+    <path d="M39 81H27a12 12 0 0 1-12-12V57"/>
+  </g>
+  <circle cx="66" cy="88" r="7" fill="#0DD5B2"/>
+  <text x="135" y="93" fill="#173F38" font-family="Avenir Next, Inter, Helvetica Neue, Arial, sans-serif" font-size="61" font-weight="500" letter-spacing="-2.7">commonity</text>
+  <text x="139" y="126" fill="#52736A" font-family="Avenir Next, Inter, Helvetica Neue, Arial, sans-serif" font-size="15" font-weight="500" letter-spacing="2.2">COMMUNITY IN COMMON</text>
+</svg>

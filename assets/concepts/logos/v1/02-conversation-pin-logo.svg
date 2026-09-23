@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="176" viewBox="0 0 520 176" role="img" aria-labelledby="title desc">
+  <title id="title">Commonity — Conversation Pin logo</title>
+  <desc id="desc">A mint green location pin with a white C-shaped conversation inside, followed by the Commonity name and tagline.</desc>
+  <g transform="translate(18 39)">
+    <path d="M48 9C27.6 9 12 24.7 12 44.3c0 18.4 13.1 32.6 36 47.7 22.9-15.1 36-29.3 36-47.7C84 24.7 68.4 9 48 9Z" fill="#0DD5B2"/>
+    <path d="M61 35c-3.4-4.2-8.3-6.5-13.9-6.5C36.6 28.5 29 36.7 29 47.2S36.6 66 47.1 66c5.6 0 10.5-2.3 13.9-6.5" fill="none" stroke="#fff" stroke-width="8.5" stroke-linecap="round"/>
+  </g>
+  <text x="135" y="93" fill="#173F38" font-family="Avenir Next, Inter, Helvetica Neue, Arial, sans-serif" font-size="61" font-weight="500" letter-spacing="-2.5">Commonity</text>
+  <text x="139" y="126" fill="#52736A" font-family="Avenir Next, Inter, Helvetica Neue, Arial, sans-serif" font-size="17" font-weight="500" letter-spacing="0.2">Community in Common</text>
+</svg>
