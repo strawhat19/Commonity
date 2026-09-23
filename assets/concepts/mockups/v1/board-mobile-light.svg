@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1170" height="2532" viewBox="0 0 390 844" role="img" aria-labelledby="title">
+<title id="title">Commonity mobile explore board — light mode</title>
+<rect x="0" y="0" width="390" height="844" rx="0" fill="#F7FAF8"/>
+<text x="20" y="22" fill="#17312D" font-family="Helvetica Neue, Arial, sans-serif" font-size="11" font-weight="600" text-anchor="start">9:41</text>
+<rect x="316" y="16" width="3" height="5" rx="1" fill="#17312D"/>
+<rect x="321" y="13" width="3" height="8" rx="1" fill="#17312D"/>
+<rect x="326" y="10" width="3" height="11" rx="1" fill="#17312D"/>
+<rect x="331" y="7" width="3" height="14" rx="1" fill="#17312D"/>
+<path d="M343 12q7-6 14 0m-11 3q4-3 8 0" fill="none" stroke="#17312D" stroke-width="1.5" stroke-linecap="round"/>
+<rect x="363" y="11" width="19" height="10" rx="2" fill="none" stroke="#17312D" stroke-width="1.2"/>
+<rect x="365" y="13" width="13" height="6" rx="1" fill="#17312D"/>
+<g transform="translate(20 36) scale(0.3645833333333333)">
+<rect width="96" height="96" rx="22" fill="#0DD5B2"/>
+<path d="M48 9C27.6 9 12 24.7 12 44.3 12 62.7 25.1 76.9 45.7 90.4Q48 92.7 50.3 90.4C70.9 76.9 84 62.7 84 44.3 84 24.7 68.4 9 48 9Z" fill="#fff"/>
+<path d="M61 33.5C57.3 30.1 52.5 28.5 47.1 28.5 36.6 28.5 29 36.7 29 47.2S36.6 66 47.1 66c5.4 0 10.2-1.6 13.9-5" transform="translate(1.5 0)" fill="none" stroke="#0DD5B2" stroke-width="8.2" stroke-linecap="round"/>
+</g>
+<text x="66" y="62" fill="#17312D" font-family="Helvetica Neue, Arial, sans-serif" font-size="20" font-weight="600" text-anchor="start">Commonity</text>
+<g transform="translate(344 43) scale(0.9166666666666666)" fill="none" stroke="#17312D" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 9a6 6 0 0 0-12 0c0 7-2 7-2 9h16c0-2-2-2-2-9Z"/><path d="M10 21h4"/></g>
+<text x="20" y="108" fill="#17312D" font-family="Helvetica Neue, Arial, sans-serif" font-size="23" font-weight="600" text-anchor="start">Explore Brookside</text>
+<text x="20" y="129" fill="#647C72" font-family="Helvetica Neue, Arial, sans-serif" font-size="12" font-weight="400" text-anchor="start">Find your people, close to home.</text>
+<rect x="20" y="150" width="350" height="45" rx="14" fill="#FFFFFF" stroke="#E1EBE6" stroke-width="1"/>
+<g transform="translate(34 161) scale(0.8333333333333334)" fill="none" stroke="#647C72" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 21 21"/></g>
+<text x="63" y="178" fill="#647C72" font-family="Helvetica Neue, Arial, sans-serif" font-size="13" font-weight="400" text-anchor="start">Search categories or communities</text>
+<text x="20" y="229" fill="#17312D" font-family="Helvetica Neue, Arial, sans-serif" font-size="19" font-weight="600" text-anchor="start">Browse categories</text>
+<rect x="20" y="245" width="166" height="115" rx="17" fill="#E4F8F0"/>
+<circle cx="47" cy="273" r="15" fill="#FFFFFF"/>
+<g transform="translate(36 262) scale(0.9166666666666666)" fill="none" stroke="#087D69" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 11.5a8 8 0 0 1-11.6 7.1L4 20l1.4-4.4A8 8 0 1 1 20 11.5Z"/></g>
+<text x="36" y="324" fill="#17312D" font-family="Helvetica Neue, Arial, sans-serif" font-size="14" font-weight="600" text-anchor="start">Ask Local</text>
+<text x="36" y="343" fill="#647C72" font-family="Helvetica Neue, Arial, sans-serif" font-size="11.5" font-weight="400" text-anchor="start">2.1k conversations</text>
+<rect x="204" y="245" width="166" height="115" rx="17" fill="#EDF0FB"/>
+<circle cx="231" cy="273" r="15" fill="#FFFFFF"/>
+<g transform="translate(220 262) scale(0.9166666666666666)" fill="none" stroke="#5868A6" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m12 2 1.8 6.2L20 10l-6.2 1.8L12 18l-1.8-6.2L4 10l6.2-1.8L12 2Z"/></g>
+<text x="220" y="324" fill="#17312D" font-family="Helvetica Neue, Arial, sans-serif" font-size="14" font-weight="600" text-anchor="start">Recommendations</text>
+<text x="220" y="343" fill="#647C72" font-family="Helvetica Neue, Arial, sans-serif" font-size="11.5" font-weight="400" text-anchor="start">1.4k conversations</text>
+<rect x="20" y="372" width="166" height="115" rx="17" fill="#FFF2DE"/>
+<circle cx="47" cy="400" r="15" fill="#FFFFFF"/>
+<g transform="translate(36 389) scale(0.9166666666666666)" fill="none" stroke="#9B671D" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="6" width="16" height="15" rx="2"/><path d="M8 3v6M16 3v6M4 11h16"/></g>
+<text x="36" y="451" fill="#17312D" font-family="Helvetica Neue, Arial, sans-serif" font-size="14" font-weight="600" text-anchor="start">Events</text>
+<text x="36" y="470" fill="#647C72" font-family="Helvetica Neue, Arial, sans-serif" font-size="11.5" font-weight="400" text-anchor="start">38 this week</text>
+<rect x="204" y="372" width="166" height="115" rx="17" fill="#FDEDED"/>
+<circle cx="231" cy="400" r="15" fill="#FFFFFF"/>
+<g transform="translate(220 389) scale(0.9166666666666666)" fill="none" stroke="#B75D61" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 21 21"/></g>
+<text x="220" y="451" fill="#17312D" font-family="Helvetica Neue, Arial, sans-serif" font-size="14" font-weight="600" text-anchor="start">Lost &amp; Found</text>
+<text x="220" y="470" fill="#647C72" font-family="Helvetica Neue, Arial, sans-serif" font-size="11.5" font-weight="400" text-anchor="start">124 conversations</text>
+<text x="20" y="523" fill="#17312D" font-family="Helvetica Neue, Arial, sans-serif" font-size="19" font-weight="600" text-anchor="start">Nearby communities</text>
+<text x="370" y="523" fill="#087D69" font-family="Helvetica Neue, Arial, sans-serif" font-size="11.5" font-weight="600" text-anchor="end">See all</text>
+<rect x="20" y="539" width="350" height="64" rx="14" fill="#FFFFFF" stroke="#E1EBE6" stroke-width="1"/>
+<circle cx="52" cy="571" r="18" fill="#E4FAF1"/>
+<text x="52" y="577" fill="#087D69" font-family="Helvetica Neue, Arial, sans-serif" font-size="16" font-weight="600" text-anchor="middle">B</text>
+<text x="82" y="567" fill="#17312D" font-family="Helvetica Neue, Arial, sans-serif" font-size="14" font-weight="600" text-anchor="start">Brookside</text>
+<text x="82" y="586" fill="#647C72" font-family="Helvetica Neue, Arial, sans-serif" font-size="11.5" font-weight="400" text-anchor="start">12.4k neighbors · Your area</text>
+<text x="350" y="577" fill="#647C72" font-family="Helvetica Neue, Arial, sans-serif" font-size="22" font-weight="400" text-anchor="middle">›</text>
+<rect x="20" y="612" width="350" height="64" rx="14" fill="#FFFFFF" stroke="#E1EBE6" stroke-width="1"/>
+<circle cx="52" cy="644" r="18" fill="#E4FAF1"/>
+<text x="52" y="650" fill="#087D69" font-family="Helvetica Neue, Arial, sans-serif" font-size="16" font-weight="600" text-anchor="middle">O</text>
+<text x="82" y="640" fill="#17312D" font-family="Helvetica Neue, Arial, sans-serif" font-size="14" font-weight="600" text-anchor="start">Old Town</text>
+<text x="82" y="659" fill="#647C72" font-family="Helvetica Neue, Arial, sans-serif" font-size="11.5" font-weight="400" text-anchor="start">4.8k neighbors · Nearby</text>
+<text x="350" y="650" fill="#647C72" font-family="Helvetica Neue, Arial, sans-serif" font-size="22" font-weight="400" text-anchor="middle">›</text>
+<rect x="20" y="685" width="350" height="64" rx="14" fill="#FFFFFF" stroke="#E1EBE6" stroke-width="1"/>
+<circle cx="52" cy="717" r="18" fill="#E4FAF1"/>
+<text x="52" y="723" fill="#087D69" font-family="Helvetica Neue, Arial, sans-serif" font-size="16" font-weight="600" text-anchor="middle">W</text>
+<text x="82" y="713" fill="#17312D" font-family="Helvetica Neue, Arial, sans-serif" font-size="14" font-weight="600" text-anchor="start">West End</text>
+<text x="82" y="732" fill="#647C72" font-family="Helvetica Neue, Arial, sans-serif" font-size="11.5" font-weight="400" text-anchor="start">3.1k neighbors · Nearby</text>
+<text x="350" y="723" fill="#647C72" font-family="Helvetica Neue, Arial, sans-serif" font-size="22" font-weight="400" text-anchor="middle">›</text>
+<rect x="0" y="769" width="390" height="75" rx="0" fill="#FFFFFF"/>
+<line x1="0" y1="769" x2="390" y2="769" stroke="#E1EBE6" stroke-width="1"/>
+<g transform="translate(32 780) scale(0.9166666666666666)" fill="none" stroke="#647C72" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10 12 3l9 7v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V10Z"/><path d="M9 21v-7h6v7"/></g>
+<text x="43" y="833" fill="#647C72" font-family="Helvetica Neue, Arial, sans-serif" font-size="10" font-weight="500" text-anchor="middle">Home</text>
+<g transform="translate(107 780) scale(0.9166666666666666)" fill="none" stroke="#087D69" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="m15.5 8.5-2.2 4.8-4.8 2.2 2.2-4.8 4.8-2.2Z"/></g>
+<text x="118" y="833" fill="#087D69" font-family="Helvetica Neue, Arial, sans-serif" font-size="10" font-weight="600" text-anchor="middle">Explore</text>
+<circle cx="195" cy="795" r="23" fill="#0DD5B2"/>
+<g transform="translate(183 783) scale(1.0)" fill="none" stroke="#10382F" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></g>
+<text x="195" y="833" fill="#647C72" font-family="Helvetica Neue, Arial, sans-serif" font-size="10" font-weight="500" text-anchor="middle">Post</text>
+<g transform="translate(261 780) scale(0.9166666666666666)" fill="none" stroke="#647C72" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12v18l-6-4-6 4V3Z"/></g>
+<text x="272" y="833" fill="#647C72" font-family="Helvetica Neue, Arial, sans-serif" font-size="10" font-weight="500" text-anchor="middle">Saved</text>
+<g transform="translate(336 780) scale(0.9166666666666666)" fill="none" stroke="#647C72" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4.5 21c0-4 3-6 7.5-6s7.5 2 7.5 6"/></g>
+<text x="347" y="833" fill="#647C72" font-family="Helvetica Neue, Arial, sans-serif" font-size="10" font-weight="500" text-anchor="middle">You</text>
+</svg>
