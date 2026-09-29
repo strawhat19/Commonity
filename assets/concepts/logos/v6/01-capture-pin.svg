@@ -1,0 +1,10 @@
+<svg id="commonity-v6-capture-pin" xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 96 96" role="img" aria-labelledby="capture-pin-title capture-pin-description">
+  <title id="capture-pin-title">Commonity — Capture Pin</title>
+  <desc id="capture-pin-description">A white capital C sits inside a white map navigation pin, with segmented capture rings and corner brackets locating the C on the familiar green tile.</desc>
+  <rect id="capture-pin-tile" width="96" height="96" rx="22" fill="#0DD5B2"/>
+  <path id="capture-pin-outline" d="M48 12C31 12 18 25 18 43c0 18 15 32 30 44 15-12 30-26 30-44C78 25 65 12 48 12Z" fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linejoin="round"/>
+  <circle id="capture-pin-hud-ring" cx="48" cy="43" r="23" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-dasharray="17 9 4 8" opacity=".54"/>
+  <path id="capture-pin-hud-brackets" d="M29 34v-7h7m24 0h7v7M29 52v7h7m24 0h7v-7" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity=".75"/>
+  <path id="capture-pin-capital-c" d="M58.5 34c-3.2-3.7-6.7-5-11-5C39.1 29 33 35.3 33 43s6.1 14 14.5 14c4.3 0 7.8-1.3 11-5" fill="none" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round"/>
+  <circle id="capture-pin-local-point" cx="48" cy="72" r="2.5" fill="#FFFFFF"/>
+</svg>

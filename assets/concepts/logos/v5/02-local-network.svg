@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 96 96" role="img" aria-labelledby="title desc">
+  <title id="title">Commonity — Local Network</title>
+  <desc id="desc">The familiar location pin holds a simple three-neighbor connection.</desc>
+  <rect id="app-tile" width="96" height="96" rx="22" fill="#0DD5B2"/>
+  <path id="location-pin" d="M48 9C27.6 9 12 24.7 12 44.3c0 18.4 13.1 32.6 36 47.7 22.9-15.1 36-29.3 36-47.7C84 24.7 68.4 9 48 9Z" fill="#FFFFFF"/>
+  <path id="neighbor-links" d="m36 43 12-9 12 9-12 13-12-13Z" fill="none" stroke="#0AAB92" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle id="left-neighbor" cx="36" cy="43" r="5" fill="#075D53"/>
+  <circle id="top-neighbor" cx="48" cy="34" r="5" fill="#075D53"/>
+  <circle id="right-neighbor" cx="60" cy="43" r="5" fill="#075D53"/>
+  <circle id="shared-neighborhood" cx="48" cy="56" r="5" fill="#0DD5B2"/>
+</svg>

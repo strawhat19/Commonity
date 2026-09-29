@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 96 96" role="img" aria-labelledby="title desc">
+  <title id="title">Commonity — Two-Way Conversation</title>
+  <desc id="desc">Two open arcs face a shared point, representing neighbors listening to each other.</desc>
+  <rect id="app-tile" width="96" height="96" rx="22" fill="#0DD5B2"/>
+  <path id="left-voice" d="M41 22C28 25 20 35 20 48s8 23 21 26" fill="none" stroke="#FFFFFF" stroke-width="9" stroke-linecap="round"/>
+  <path id="right-voice" d="M55 22c13 3 21 13 21 26S68 71 55 74" fill="none" stroke="#FFFFFF" stroke-width="9" stroke-linecap="round"/>
+  <circle id="shared-point" cx="48" cy="48" r="7" fill="#075D53"/>
+</svg>
