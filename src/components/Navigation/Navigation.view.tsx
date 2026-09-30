@@ -1,18 +1,21 @@
 import Icon from '../Icon/Icon';
+import type { IconProps } from '../Icon/Icon';
 import { createStyles } from './Navigation.styles';
-import { Pressable, Text, View } from 'react-native';
 import type { NavigationTab } from './Navigation';
 import { elementProps } from '../../shared/elementProps';
+import type { AppPage } from '../../shared/NavigationContext';
+import { Pressable, Text, View } from 'react-native';
 import { useTheme, useThemedStyles } from '../../shared/ThemeContext';
 
 type NavigationItem = {
     readonly label: string;
     readonly key: NavigationTab;
-    readonly icon: `navigate-outline` | `grid-outline` | `bookmark-outline`;
+    readonly icon: IconProps[`name`];
 };
 
 type NavigationViewProps = {
     compact: boolean;
+    currentPage: AppPage;
     activeTab: NavigationTab;
     tabs: readonly NavigationItem[];
     onSelect: (tab: NavigationTab) => void;
@@ -23,6 +26,7 @@ export function NavigationView({
     compact,
     onSelect,
     activeTab,
+    currentPage,
 }: NavigationViewProps) {
     const { palette } = useTheme();
     const styles = useThemedStyles(createStyles);
@@ -34,7 +38,7 @@ export function NavigationView({
             style={[styles.navigation, compact && styles.compactNavigation]}
         >
             {tabs.map(({ key, icon, label }) => {
-                const selected = activeTab === key;
+                const selected = currentPage === `home` && activeTab === key;
                 const color = selected ? palette.ink : palette.muted;
                 const itemId = `commonity-navigation-tab-${scope}-${key}`;
 
@@ -56,7 +60,6 @@ export function NavigationView({
                         <Icon
                             name={icon}
                             size={compact ? 21 : 18}
-                            color={color}
                             id={`${itemId}-icon`}
                         />
                         <Text

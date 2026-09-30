@@ -1,9 +1,12 @@
 import Icon from '../Icon/Icon';
+import Footer from '../Footer/Footer';
 import { StatusBar } from 'expo-status-bar';
 import { PostCard } from '../PostCard/PostCard';
 import { createStyles } from './LandingPage.styles';
 import { Navigation } from '../Navigation/Navigation';
 import { elementProps } from '../../shared/elementProps';
+import type { AppPage } from '../../shared/NavigationContext';
+import InformationPage from '../InformationPage/InformationPage';
 import { Pressable, ScrollView, Text, View } from 'react-native';
 import { useTheme, useThemedStyles } from '../../shared/ThemeContext';
 import Logo from '../../../assets/concepts/logos/v9/03-c-brackets.svg';
@@ -13,6 +16,7 @@ type LandingPageViewProps = {
     topInset: number;
     emptySaved: boolean;
     bottomInset: number;
+    currentPage: AppPage;
     notice: string | null;
     onNearby: () => void;
     section: { label: string; title: string; subtitle: string };
@@ -26,8 +30,9 @@ export default function LandingPageView({
     onNearby,
     emptySaved,
     bottomInset,
+    currentPage,
 }: LandingPageViewProps) {
-    const { mode, palette, toggleTheme } = useTheme();
+    const { mode, toggleTheme } = useTheme();
     const styles = useThemedStyles(createStyles);
 
     return (
@@ -90,7 +95,6 @@ export default function LandingPageView({
                         >
                             <Icon
                                 size={16}
-                                color={palette.muted}
                                 name={`location-outline`}
                                 id={`commonity-location-icon`}
                             />
@@ -98,7 +102,7 @@ export default function LandingPageView({
                                 style={styles.locationText}
                                 {...elementProps(`commonity-location-text`)}
                             >
-                                {`Demo neighborhood`}
+                                {`Local`}
                             </Text>
                         </View>
                     )}
@@ -111,7 +115,6 @@ export default function LandingPageView({
                     >
                         <Icon
                             size={19}
-                            color={palette.ink}
                             id={`commonity-theme-toggle-icon`}
                             name={mode === `dark` ? `sunny-outline` : `moon-outline`}
                         />
@@ -120,125 +123,141 @@ export default function LandingPageView({
             </View>
 
             <ScrollView
+                key={currentPage}
                 style={styles.scroll}
                 showsVerticalScrollIndicator={false}
                 contentContainerStyle={styles.scrollContent}
                 {...elementProps(`commonity-main`)}
             >
                 <View
-                    style={styles.stage}
-                    {...elementProps(`commonity-stage`)}
+                    style={styles.content}
+                    {...elementProps(`commonity-content`)}
                 >
                     <View
-                        style={styles.introduction}
-                        {...elementProps(`commonity-introduction`)}
+                        {...elementProps(`commonity-stage`, `commonity-stage-${currentPage}`)}
+                        style={[styles.stage, currentPage !== `home` && styles.informationStage]}
                     >
-                        <View
-                            style={styles.eyebrowRow}
-                            {...elementProps(`commonity-eyebrow-row`)}
-                        >
-                            <View
-                                style={styles.localDot}
-                                {...elementProps(`commonity-local-dot`)}
+                        {currentPage !== `home` ? (
+                            <InformationPage
+                                wide={wide}
+                                page={currentPage}
+                                onHome={onNearby}
                             />
-                            <Text
-                                style={styles.eyebrow}
-                                {...elementProps(`commonity-eyebrow`)}
-                            >
-                                {section.label}
-                            </Text>
-                        </View>
-                        <Text
-                            accessibilityRole={`header`}
-                            {...elementProps(`commonity-heading`)}
-                            style={[styles.heading, wide && styles.headingWide]}
-                        >
-                            {section.title}
-                        </Text>
-                        <Text
-                            style={styles.subtitle}
-                            {...elementProps(`commonity-subtitle`)}
-                        >
-                            {section.subtitle}
-                        </Text>
-                    </View>
-
-                    {emptySaved ? (
-                        <View
-                            style={styles.emptyCard}
-                            {...elementProps(`commonity-saved-empty`)}
-                        >
-                            <View
-                                style={styles.emptyIcon}
-                                {...elementProps(`commonity-saved-empty-icon-frame`)}
-                            >
-                                <Icon
-                                    size={28}
-                                    name={`bookmark-outline`}
-                                    id={`commonity-saved-empty-icon`}
-                                />
-                            </View>
-                            <Text
-                                style={styles.emptyTitle}
-                                {...elementProps(`commonity-saved-empty-title`)}
-                            >
-                                {`Something worth keeping.`}
-                            </Text>
-                            <Text
-                                style={styles.emptyDescription}
-                                {...elementProps(`commonity-saved-empty-description`)}
-                            >
-                                {`Tap the bookmark on a post to find it here.`}
-                            </Text>
-                            <Pressable
-                                onPress={onNearby}
-                                accessibilityRole={`button`}
-                                {...elementProps(`commonity-saved-empty-action`)}
-                                style={({ pressed }) => [styles.emptyAction, pressed && styles.pressed]}
-                            >
-                                <Icon
-                                    size={18}
-                                    name={`navigate-outline`}
-                                    id={`commonity-saved-empty-action-icon`}
-                                />
-                                <Text
-                                    style={styles.emptyActionText}
-                                    {...elementProps(`commonity-saved-empty-action-text`)}
+                        ) : (
+                            <>
+                                <View
+                                    style={styles.introduction}
+                                    {...elementProps(`commonity-introduction`)}
                                 >
-                                    {`Explore nearby`}
-                                </Text>
-                            </Pressable>
-                        </View>
-                    ) : <PostCard />}
+                                    <View
+                                        style={styles.eyebrowRow}
+                                        {...elementProps(`commonity-eyebrow-row`)}
+                                    >
+                                        <View
+                                            style={styles.localDot}
+                                            {...elementProps(`commonity-local-dot`)}
+                                        />
+                                        <Text
+                                            style={styles.eyebrow}
+                                            {...elementProps(`commonity-eyebrow`)}
+                                        >
+                                            {section.label}
+                                        </Text>
+                                    </View>
+                                    <Text
+                                        accessibilityRole={`header`}
+                                        {...elementProps(`commonity-heading`)}
+                                        style={[styles.heading, wide && styles.headingWide]}
+                                    >
+                                        {section.title}
+                                    </Text>
+                                    <Text
+                                        style={styles.subtitle}
+                                        {...elementProps(`commonity-subtitle`)}
+                                    >
+                                        {section.subtitle}
+                                    </Text>
+                                </View>
 
-                    <View
-                        style={styles.privacy}
-                        {...elementProps(`commonity-privacy`)}
-                    >
-                        <Icon
-                            size={13}
-                            color={palette.muted}
-                            name={`shield-checkmark-outline`}
-                            id={`commonity-privacy-icon`}
-                        />
-                        <Text
-                            style={styles.privacyText}
-                            {...elementProps(`commonity-privacy-text`)}
-                        >
-                            {`A demo community. Anonymous by default.`}
-                        </Text>
+                                {emptySaved ? (
+                                    <View
+                                        style={styles.emptyCard}
+                                        {...elementProps(`commonity-saved-empty`)}
+                                    >
+                                        <View
+                                            style={styles.emptyIcon}
+                                            {...elementProps(`commonity-saved-empty-icon-frame`)}
+                                        >
+                                            <Icon
+                                                size={28}
+                                                name={`bookmark-outline`}
+                                                id={`commonity-saved-empty-icon`}
+                                            />
+                                        </View>
+                                        <Text
+                                            style={styles.emptyTitle}
+                                            {...elementProps(`commonity-saved-empty-title`)}
+                                        >
+                                            {`Something worth keeping.`}
+                                        </Text>
+                                        <Text
+                                            style={styles.emptyDescription}
+                                            {...elementProps(`commonity-saved-empty-description`)}
+                                        >
+                                            {`Tap the bookmark on a post to find it here.`}
+                                        </Text>
+                                        <Pressable
+                                            onPress={onNearby}
+                                            accessibilityRole={`button`}
+                                            {...elementProps(`commonity-saved-empty-action`)}
+                                            style={({ pressed }) => [styles.emptyAction, pressed && styles.pressed]}
+                                        >
+                                            <Icon
+                                                size={18}
+                                                name={`navigate-outline`}
+                                                id={`commonity-saved-empty-action-icon`}
+                                            />
+                                            <Text
+                                                style={styles.emptyActionText}
+                                                {...elementProps(`commonity-saved-empty-action-text`)}
+                                            >
+                                                {`Explore nearby`}
+                                            </Text>
+                                        </Pressable>
+                                    </View>
+                                ) : <PostCard />}
+
+                                <View
+                                    style={styles.privacy}
+                                    {...elementProps(`commonity-privacy`)}
+                                >
+                                    <Icon
+                                        size={13}
+                                        name={`shield-checkmark-outline`}
+                                        id={`commonity-privacy-icon`}
+                                    />
+                                    <Text
+                                        style={styles.privacyText}
+                                        {...elementProps(`commonity-privacy-text`)}
+                                    >
+                                        {`A demo community. Anonymous by default.`}
+                                    </Text>
+                                </View>
+
+                                {notice && (
+                                    <Text
+                                        style={styles.notice}
+                                        accessibilityLiveRegion={`polite`}
+                                        {...elementProps(`commonity-notice`)}
+                                    >
+                                        {notice}
+                                    </Text>
+                                )}
+                            </>
+                        )}
                     </View>
-
-                    {notice && (
-                        <Text
-                            style={styles.notice}
-                            accessibilityLiveRegion={`polite`}
-                            {...elementProps(`commonity-notice`)}
-                        >
-                            {notice}
-                        </Text>
-                    )}
                 </View>
+                <Footer wide={wide} />
             </ScrollView>
 
             {!wide && (

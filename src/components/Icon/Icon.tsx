@@ -18,7 +18,7 @@ export default function Icon({ id, name, size = 20, color }: IconProps) {
             id={id}
             name={name}
             size={size}
-            color={color ?? palette.ink}
+            color={color ?? palette.mint}
         />
     );
 }

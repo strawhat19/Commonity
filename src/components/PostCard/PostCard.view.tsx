@@ -4,7 +4,7 @@ import { View, Text, Pressable } from 'react-native';
 import Icon from '../Icon/Icon';
 import { createStyles } from './PostCard.styles';
 import { elementProps } from '../../shared/elementProps';
-import { useTheme, useThemedStyles } from '../../shared/ThemeContext';
+import { useThemedStyles } from '../../shared/ThemeContext';
 
 type PostCardViewProps = {
     score: number;
@@ -27,7 +27,6 @@ export function PostCardView({
     onReplies,
     repliesOpen,
 }: PostCardViewProps) {
-    const { palette } = useTheme();
     const styles = useThemedStyles(createStyles);
 
     return (
@@ -49,7 +48,6 @@ export function PostCardView({
                     >
                         <Icon
                             size={23}
-                            color={palette.ink}
                             name={`leaf-outline`}
                             id={`commonity-post-leaf`}
                         />
@@ -93,7 +91,6 @@ export function PostCardView({
                     >
                         <Icon
                             size={22}
-                            color={palette.ink}
                             id={`commonity-post-bookmark`}
                             name={saved ? `bookmark` : `bookmark-outline`}
                         />
@@ -111,7 +108,6 @@ export function PostCardView({
                     >
                         <Icon
                             size={21}
-                            color={palette.muted}
                             name={`share-outline`}
                             id={`commonity-post-share-icon`}
                         />
@@ -172,7 +168,6 @@ export function PostCardView({
                 >
                     <Icon
                         size={20}
-                        color={palette.muted}
                         name={`chatbubble-outline`}
                         id={`commonity-post-replies-icon`}
                     />
@@ -204,7 +199,6 @@ export function PostCardView({
                         <Icon
                             size={20}
                             name={`arrow-up`}
-                            color={vote === 1 ? palette.mintInk : palette.ink}
                             id={`commonity-post-upvote-icon`}
                         />
                     </Pressable>
@@ -232,7 +226,6 @@ export function PostCardView({
                         <Icon
                             size={20}
                             name={`arrow-down`}
-                            color={vote === -1 ? palette.mintInk : palette.muted}
                             id={`commonity-post-downvote-icon`}
                         />
                     </Pressable>

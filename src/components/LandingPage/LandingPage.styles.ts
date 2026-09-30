@@ -81,9 +81,15 @@ export const createStyles = (palette: Palette) => StyleSheet.create({
         flex: 1,
     },
     scrollContent: {
+        gap: 40,
         flexGrow: 1,
         paddingVertical: 30,
         paddingHorizontal: 20,
+        alignItems: `center`,
+    },
+    content: {
+        flexGrow: 1,
+        width: `100%`,
         alignItems: `center`,
         justifyContent: `center`,
     },
@@ -91,6 +97,9 @@ export const createStyles = (palette: Palette) => StyleSheet.create({
         gap: 24,
         width: `100%`,
         maxWidth: 560,
+    },
+    informationStage: {
+        maxWidth: 760,
     },
     introduction: {
         gap: 9,

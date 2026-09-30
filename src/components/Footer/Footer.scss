@@ -1,0 +1,32 @@
+.commonity-footer,
+.commonity-footer-copyright,
+.commonity-footer-link-label {
+    transition: color 220ms ease, border-color 220ms ease;
+}
+
+.commonity-footer-link {
+    cursor: pointer;
+    text-decoration: none;
+    transition: opacity 180ms ease, transform 180ms ease, background-color 220ms ease;
+
+    &:focus-visible {
+        outline-offset: 3px;
+        outline: 2px solid #0dd5b2;
+    }
+}
+
+@media (hover: hover) {
+    .commonity-footer-link:hover {
+        transform: translateY(-1px);
+        background-color: var(--commonity-hover);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .commonity-footer,
+    .commonity-footer-copyright,
+    .commonity-footer-link,
+    .commonity-footer-link-label {
+        transition: none;
+    }
+}

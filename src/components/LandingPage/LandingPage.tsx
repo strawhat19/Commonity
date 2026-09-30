@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import LandingPageView from './LandingPage.view';
 import { useWindowDimensions } from 'react-native';
 import { useCommunity } from '../../shared/CommunityContext';
+import { useNavigation } from '../../shared/NavigationContext';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 const sections = {
@@ -25,6 +26,7 @@ const sections = {
 export default function LandingPage() {
     const insets = useSafeAreaInsets();
     const { width } = useWindowDimensions();
+    const { currentPage, setCurrentPage } = useNavigation();
     const { saved, notice, activeTab, setNotice, setActiveTab } = useCommunity();
 
     useEffect(() => {
@@ -34,14 +36,20 @@ export default function LandingPage() {
         return () => clearTimeout(timeout);
     }, [notice, setNotice]);
 
+    const handleNearby = () => {
+        setActiveTab(`nearby`);
+        setCurrentPage(`home`);
+    };
+
     return (
         <LandingPageView
             wide={width >= 768}
             notice={notice}
+            currentPage={currentPage}
             topInset={insets.top}
+            onNearby={handleNearby}
             section={sections[activeTab]}
             bottomInset={insets.bottom}
-            onNearby={() => setActiveTab(`nearby`)}
             emptySaved={activeTab === `saved` && !saved}
         />
     );

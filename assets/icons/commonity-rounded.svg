@@ -1,19 +1,29 @@
 <svg
   fill="none"
-  width="96"
-  height="96"
+  width="1024"
+  height="1024"
   role="img"
   stroke="#0DD5B2"
   viewBox="24 19 48 48"
   stroke-linecap="round"
   stroke-linejoin="round"
-  id="commonity-v9-c-brackets"
-  class="commonity-v9-c-brackets"
+  id="commonity-rounded"
+  class="commonity-rounded"
   xmlns="http://www.w3.org/2000/svg"
   aria-labelledby="c-brackets-title c-brackets-description"
 >
   <title id="c-brackets-title" class="c-brackets-title">Commonity — C and Four Brackets</title>
   <desc id="c-brackets-description" class="c-brackets-description">A mint C surrounded by four equal circular brackets with matching stroke weight on a transparent background.</desc>
+  <rect
+    x="24"
+    y="19"
+    width="48"
+    height="48"
+    fill="#001e2d"
+    stroke="none" rx="10.5"
+    id="commonity-rounded-background"
+    class="commonity-rounded-background"
+  />
   <g
     stroke-width="4.4"
     id="c-brackets-circular-brackets"
