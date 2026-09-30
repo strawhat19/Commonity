@@ -99,6 +99,31 @@ export const informationPages: Record<InformationPageKey, InformationContent> = 
             },
         ],
     },
+    contact: {
+        title: `Contact Commonity`,
+        eyebrow: `QUESTIONS & FEEDBACK`,
+        icon: `mail-outline`,
+        summary: `Have a question, an idea, or feedback about Commonity? Start with Piratechs.`,
+        note: `Visit Piratechs using the link in the footer.`,
+        sections: [
+            {
+                id: `reach-piratechs`,
+                title: `Reach Piratechs`,
+                paragraphs: [
+                    `Open the Piratechs website using the footer link to learn more and look for its available contact options.`,
+                    `This Commonity demo does not include a contact form or send messages from the app.`,
+                ],
+            },
+            {
+                id: `report-an-issue`,
+                title: `Tell us what happened`,
+                paragraphs: [
+                    `When sharing feedback about an issue, include the page, what you expected, and what happened. Your browser and device details can help explain the experience.`,
+                    `Avoid including private information about yourself or other people when describing the sample conversation.`,
+                ],
+            },
+        ],
+    },
     privacy: {
         title: `Privacy Policy`,
         eyebrow: `YOUR PRIVACY`,

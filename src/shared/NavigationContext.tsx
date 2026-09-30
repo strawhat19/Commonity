@@ -3,7 +3,7 @@ import { Platform } from 'react-native';
 import type { PropsWithChildren } from 'react';
 import { createContext, useContext, useEffect, useState } from 'react';
 
-export type InformationPageKey = `about` | `terms` | `privacy`;
+export type InformationPageKey = `about` | `terms` | `contact` | `privacy`;
 export type AppPage = `home` | InformationPageKey;
 
 type NavigationState = {
@@ -25,9 +25,11 @@ const pageRoutes: Record<string, AppPage> = {
     [`/`]: `home`,
     [`/about`]: `about`,
     [`/terms`]: `terms`,
+    [`/contact`]: `contact`,
     [`/privacy`]: `privacy`,
     [`/index.html`]: `home`,
     [`/about-us`]: `about`,
+    [`/contact-us`]: `contact`,
     [`/terms-of-use`]: `terms`,
     [`/terms-of-service`]: `terms`,
     [`/privacy-policy`]: `privacy`,
@@ -75,6 +77,7 @@ export function NavigationProvider({ children }: PropsWithChildren) {
             home: `Commonity · Community in Common`,
             about: `About · Commonity`,
             terms: `Terms · Commonity`,
+            contact: `Contact · Commonity`,
             privacy: `Privacy Policy · Commonity`,
         };
 

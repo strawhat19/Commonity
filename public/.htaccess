@@ -1,6 +1,7 @@
 RewriteEngine On
 
 RewriteRule ^about-us/?$ about [R=301,L]
+RewriteRule ^contact-us/?$ contact [R=301,L]
 RewriteRule ^privacy-policy/?$ privacy [R=301,L]
 RewriteRule ^terms-(of-use|of-service)/?$ terms [R=301,L]
 

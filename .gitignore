@@ -1,6 +1,8 @@
 dist/
 .expo/
+.vercel/
 web-build/
 node_modules/
 .env*.local
 *.tsbuildinfo
+.vercel

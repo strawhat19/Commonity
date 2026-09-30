@@ -10,6 +10,7 @@ import type { InformationPageKey } from '../../shared/NavigationContext';
 const policyLinks = [
     { key: `about`, label: `About`, icon: `information-circle-outline` },
     { key: `terms`, label: `Terms`, icon: `document-text-outline` },
+    { key: `contact`, label: `Contact`, icon: `mail-outline` },
     { key: `privacy`, label: `Privacy`, icon: `shield-checkmark-outline` },
 ] as const;
 
