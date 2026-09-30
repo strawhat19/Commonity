@@ -13,7 +13,7 @@
   aria-labelledby="c-brackets-title c-brackets-description"
 >
   <title id="c-brackets-title" class="c-brackets-title">Commonity — C and Four Brackets</title>
-  <desc id="c-brackets-description" class="c-brackets-description">A mint C surrounded by four equal circular brackets with matching stroke weight on a transparent background.</desc>
+  <desc id="c-brackets-description" class="c-brackets-description">A pin-free mint C and four circular brackets with matching stroke weight on a rounded navy tile with transparent corners.</desc>
   <rect
     x="24"
     y="19"
@@ -25,39 +25,45 @@
     class="commonity-rounded-background"
   />
   <g
-    stroke-width="4.4"
-    id="c-brackets-circular-brackets"
-    class="c-brackets-circular-brackets"
+    id="commonity-rounded-foreground"
+    class="commonity-rounded-foreground"
+    transform="translate(48 43) scale(.82) translate(-48 -43)"
   >
+    <g
+      stroke-width="4.4"
+      id="c-brackets-circular-brackets"
+      class="c-brackets-circular-brackets"
+    >
+      <path
+        id="c-brackets-top-arc"
+        class="c-brackets-top-arc"
+        d="M39.314776 26.665470A18.5 18.5 0 0 1 56.685224 26.665470"
+      />
+      <path
+        id="c-brackets-right-arc"
+        class="c-brackets-right-arc"
+        transform="rotate(90 48 43)"
+        d="M39.314776 26.665470A18.5 18.5 0 0 1 56.685224 26.665470"
+      />
+      <path
+        id="c-brackets-bottom-arc"
+        class="c-brackets-bottom-arc"
+        transform="rotate(180 48 43)"
+        d="M39.314776 26.665470A18.5 18.5 0 0 1 56.685224 26.665470"
+      />
+      <path
+        id="c-brackets-left-arc"
+        class="c-brackets-left-arc"
+        transform="rotate(270 48 43)"
+        d="M39.314776 26.665470A18.5 18.5 0 0 1 56.685224 26.665470"
+      />
+    </g>
     <path
-      id="c-brackets-top-arc"
-      class="c-brackets-top-arc"
-      d="M39.314776 26.665470A18.5 18.5 0 0 1 56.685224 26.665470"
-    />
-    <path
-      id="c-brackets-right-arc"
-      class="c-brackets-right-arc"
-      transform="rotate(90 48 43)"
-      d="M39.314776 26.665470A18.5 18.5 0 0 1 56.685224 26.665470"
-    />
-    <path
-      id="c-brackets-bottom-arc"
-      class="c-brackets-bottom-arc"
-      transform="rotate(180 48 43)"
-      d="M39.314776 26.665470A18.5 18.5 0 0 1 56.685224 26.665470"
-    />
-    <path
-      id="c-brackets-left-arc"
-      class="c-brackets-left-arc"
-      transform="rotate(270 48 43)"
-      d="M39.314776 26.665470A18.5 18.5 0 0 1 56.685224 26.665470"
+      stroke-width="5.5"
+      id="c-brackets-capital-c"
+      class="c-brackets-capital-c"
+      transform="translate(1.8 0) translate(48 43) scale(.8) translate(-48 -43)"
+      d="M58.5 34c-3.2-3.7-6.7-5-11-5C39.1 29 33 35.3 33 43s6.1 14 14.5 14c4.3 0 7.8-1.3 11-5"
     />
   </g>
-  <path
-    stroke-width="5.5"
-    id="c-brackets-capital-c"
-    class="c-brackets-capital-c"
-    transform="translate(48 43) scale(.8) translate(-48 -43)"
-    d="M58.5 34c-3.2-3.7-6.7-5-11-5C39.1 29 33 35.3 33 43s6.1 14 14.5 14c4.3 0 7.8-1.3 11-5"
-  />
 </svg>

@@ -123,7 +123,9 @@ export const createStyles = (palette: Palette) => StyleSheet.create({
         justifyContent: `center`,
     },
     selectedVote: {
-        backgroundColor: palette.mint,
+        borderWidth: 1,
+        borderColor: palette.mint,
+        backgroundColor: palette.paper,
     },
     voteScore: {
         fontSize: 13,

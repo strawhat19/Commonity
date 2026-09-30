@@ -1,3 +1,4 @@
+import appConfig from '../../app.json';
 import { Platform } from 'react-native';
 import type { PropsWithChildren } from 'react';
 import { createContext, useContext, useEffect, useState } from 'react';
@@ -12,11 +13,41 @@ type NavigationState = {
 
 const NavigationContext = createContext<NavigationState | null>(null);
 
+type RoutingConfig = {
+    experiments?: { baseUrl?: string };
+};
+
+const configuredBaseUrl = (appConfig.expo as RoutingConfig).experiments?.baseUrl ?? ``;
+const deploymentPath = configuredBaseUrl.replace(/^\/+|\/+$/g, ``);
+const basePath = !__DEV__ && deploymentPath ? `/${deploymentPath}` : ``;
+
+const pageRoutes: Record<string, AppPage> = {
+    [`/`]: `home`,
+    [`/about`]: `about`,
+    [`/terms`]: `terms`,
+    [`/privacy`]: `privacy`,
+    [`/index.html`]: `home`,
+    [`/about-us`]: `about`,
+    [`/terms-of-use`]: `terms`,
+    [`/terms-of-service`]: `terms`,
+    [`/privacy-policy`]: `privacy`,
+};
+
+export function getPageHref(page: AppPage) {
+    const path = page === `home` ? `/` : `/${page}`;
+    return `${basePath}${path}`;
+}
+
 function readPage(): AppPage {
     if (Platform.OS !== `web` || typeof window === `undefined`) return `home`;
 
-    const page = window.location.hash.replace(/^#\/?/, ``);
-    return page === `about` || page === `terms` || page === `privacy` ? page : `home`;
+    const pathname = window.location.pathname;
+    const path = basePath && (pathname === basePath || pathname.startsWith(`${basePath}/`))
+        ? pathname.slice(basePath.length)
+        : pathname;
+    const route = path.replace(/\/+$/g, ``).toLowerCase() || `/`;
+
+    return pageRoutes[route] ?? `home`;
 }
 
 export function NavigationProvider({ children }: PropsWithChildren) {
@@ -25,9 +56,16 @@ export function NavigationProvider({ children }: PropsWithChildren) {
     useEffect(() => {
         if (Platform.OS !== `web` || typeof window === `undefined`) return;
 
-        const handleHashChange = () => setPage(readPage());
-        window.addEventListener(`hashchange`, handleHashChange);
-        return () => window.removeEventListener(`hashchange`, handleHashChange);
+        const handleLocationChange = () => {
+            const page = readPage();
+            const url = `${getPageHref(page)}${window.location.search}`;
+            window.history.replaceState(window.history.state, ``, url);
+            setPage(page);
+        };
+
+        handleLocationChange();
+        window.addEventListener(`popstate`, handleLocationChange);
+        return () => window.removeEventListener(`popstate`, handleLocationChange);
     }, []);
 
     useEffect(() => {
@@ -48,8 +86,12 @@ export function NavigationProvider({ children }: PropsWithChildren) {
 
         if (Platform.OS !== `web` || typeof window === `undefined`) return;
 
-        const hash = page === `home` ? `#/` : `#/${page}`;
-        if (window.location.hash !== hash) window.location.hash = hash;
+        const path = getPageHref(page);
+
+        if (window.location.pathname !== path) {
+            const url = `${path}${window.location.search}`;
+            window.history.pushState(window.history.state, ``, url);
+        }
     };
 
     return (

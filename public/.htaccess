@@ -1,0 +1,9 @@
+RewriteEngine On
+
+RewriteRule ^about-us/?$ about [R=301,L]
+RewriteRule ^privacy-policy/?$ privacy [R=301,L]
+RewriteRule ^terms-(of-use|of-service)/?$ terms [R=301,L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ index.html [END]

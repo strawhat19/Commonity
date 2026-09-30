@@ -1,15 +1,25 @@
 import Icon from '../Icon/Icon';
 import { createStyles } from './Footer.styles';
+import type { GestureResponderEvent } from 'react-native';
 import { elementProps } from '../../shared/elementProps';
 import { Platform, Pressable, Text, View } from 'react-native';
-import type { InformationPageKey } from '../../shared/NavigationContext';
 import { useThemedStyles } from '../../shared/ThemeContext';
+import { getPageHref } from '../../shared/NavigationContext';
+import type { InformationPageKey } from '../../shared/NavigationContext';
 
 const policyLinks = [
     { key: `about`, label: `About`, icon: `information-circle-outline` },
     { key: `terms`, label: `Terms`, icon: `document-text-outline` },
     { key: `privacy`, label: `Privacy`, icon: `shield-checkmark-outline` },
 ] as const;
+
+type WebPressEvent = {
+    button?: number;
+    altKey?: boolean;
+    ctrlKey?: boolean;
+    metaKey?: boolean;
+    shiftKey?: boolean;
+};
 
 type FooterViewProps = {
     wide: boolean;
@@ -31,6 +41,19 @@ export default function FooterView({
 }: FooterViewProps) {
     const styles = useThemedStyles(createStyles);
 
+    const openPage = (event: GestureResponderEvent, page: InformationPageKey) => {
+        if (Platform.OS === `web`) {
+            const webEvent = event.nativeEvent as typeof event.nativeEvent & WebPressEvent;
+            const { button, altKey, ctrlKey, metaKey, shiftKey } = webEvent;
+
+            if (altKey || ctrlKey || metaKey || shiftKey || (button !== undefined && button !== 0)) return;
+
+            event.preventDefault();
+        }
+
+        onOpenPage(page);
+    };
+
     return (
         <View
             {...elementProps(`commonity-footer`)}
@@ -48,7 +71,7 @@ export default function FooterView({
             >
                 {policyLinks.map(({ key, label, icon }) => {
                     const id = `commonity-footer-${key}-link`;
-                    const pageLinkProps = Platform.OS === `web` ? { href: `#/${key}` } : {};
+                    const pageLinkProps = Platform.OS === `web` ? { href: getPageHref(key) } : {};
 
                     return (
                         <Pressable
@@ -56,7 +79,7 @@ export default function FooterView({
                             {...pageLinkProps}
                             accessibilityRole={`link`}
                             accessibilityLabel={label}
-                            onPress={() => onOpenPage(key)}
+                            onPress={(event) => openPage(event, key)}
                             {...elementProps(`commonity-footer-link commonity-footer-policy-link`, id)}
                             style={({ pressed }) => [styles.link, pressed && styles.pressed]}
                         >

@@ -19,7 +19,7 @@ export default function Footer({ wide }: FooterProps) {
     } : {};
 
     const openPage = (page: InformationPageKey) => {
-        if (Platform.OS !== `web`) setCurrentPage(page);
+        setCurrentPage(page);
     };
 
     const openPiratechs = () => {
