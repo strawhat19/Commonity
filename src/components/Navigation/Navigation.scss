@@ -1,0 +1,26 @@
+.commonity-navigation-tab {
+    cursor: pointer;
+    transition:
+        opacity 180ms ease,
+        transform 180ms ease,
+        background-color 220ms ease;
+
+    &:hover {
+        background-color: var(--commonity-hover);
+    }
+
+    &[aria-selected='true']:hover {
+        background-color: var(--commonity-selected-hover);
+    }
+
+    &:focus-visible {
+        outline: 2px solid #0dd5b2;
+        outline-offset: 3px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .commonity-navigation-tab {
+        transition: none;
+    }
+}

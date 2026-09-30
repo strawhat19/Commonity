@@ -1,0 +1,89 @@
+.commonity-post-card {
+    transition: border-color 240ms ease, background-color 240ms ease, box-shadow 240ms ease;
+
+    .commonity-post-tag,
+    .commonity-post-footer,
+    .commonity-post-community-icon,
+    .commonity-post-vote-controls,
+    .commonity-post-demo-reply {
+        transition: border-color 240ms ease, background-color 240ms ease;
+    }
+
+    .commonity-post-meta,
+    .commonity-post-tag-label,
+    .commonity-post-paragraph,
+    .commonity-post-vote-score,
+    .commonity-post-replies-label,
+    .commonity-post-community-name,
+    .commonity-post-reply-author,
+    .commonity-post-reply-content,
+    .commonity-post-reply-demo-label {
+        transition: color 240ms ease;
+    }
+
+    .commonity-post-save-button,
+    .commonity-post-share-button,
+    .commonity-post-replies-button,
+    .commonity-post-upvote-button,
+    .commonity-post-downvote-button {
+        cursor: pointer;
+        transition: opacity 180ms ease, background-color 180ms ease, transform 180ms ease;
+
+        &:hover {
+            transform: translateY(-1px);
+        }
+
+        &:focus-visible {
+            outline: 2px solid #0dd5b2;
+            outline-offset: 3px;
+        }
+    }
+
+    .commonity-post-demo-reply {
+        animation: commonity-reply-arrive 220ms ease-out both;
+    }
+}
+
+@keyframes commonity-reply-arrive {
+    from {
+        opacity: 0;
+        transform: translateY(-6px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (min-width: 600px) {
+    .commonity-post-card {
+        padding: 32px !important;
+
+        .commonity-post-paragraph {
+            font-size: 25px !important;
+            line-height: 36px !important;
+        }
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .commonity-post-card {
+        &,
+        * {
+            transition: none !important;
+        }
+
+        .commonity-post-save-button,
+        .commonity-post-share-button,
+        .commonity-post-replies-button,
+        .commonity-post-upvote-button,
+        .commonity-post-downvote-button {
+            transition: none;
+        }
+
+        .commonity-post-demo-reply {
+            animation: none;
+        }
+    }
+}

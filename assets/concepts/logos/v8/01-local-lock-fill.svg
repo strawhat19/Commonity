@@ -1,0 +1,15 @@
+<svg id="commonity-v8-local-lock-fill" xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 96 96" role="img" aria-labelledby="lock-fill-title lock-fill-description">
+  <title id="lock-fill-title">Commonity — Four-Segment Local Lock Fill</title>
+  <desc id="lock-fill-description">The original filled white locator pin and green window contain a white C surrounded on all sides by four equal circular arc segments. The segments share one center and radius, with equal gaps and ninety-degree rotational symmetry.</desc>
+  <rect id="lock-fill-tile" width="96" height="96" rx="22" fill="#0DD5B2"/>
+  <path id="lock-fill-pin" d="M48 10C29 10 15 24.5 15 43c0 18.5 15.5 33.5 33 46 17.5-12.5 33-27.5 33-46C81 24.5 67 10 48 10Z" fill="#FFFFFF"/>
+  <circle id="lock-fill-window" cx="48" cy="43" r="25" fill="#0DD5B2"/>
+  <g id="lock-fill-circular-brackets" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round">
+    <path id="lock-fill-top-arc" d="M35.068724 25.201626A22 22 0 0 1 60.931276 25.201626"/>
+    <path id="lock-fill-right-arc" d="M35.068724 25.201626A22 22 0 0 1 60.931276 25.201626" transform="rotate(90 48 43)"/>
+    <path id="lock-fill-bottom-arc" d="M35.068724 25.201626A22 22 0 0 1 60.931276 25.201626" transform="rotate(180 48 43)"/>
+    <path id="lock-fill-left-arc" d="M35.068724 25.201626A22 22 0 0 1 60.931276 25.201626" transform="rotate(270 48 43)"/>
+  </g>
+  <path id="lock-fill-capital-c" d="M58.5 34c-3.2-3.7-6.7-5-11-5C39.1 29 33 35.3 33 43s6.1 14 14.5 14c4.3 0 7.8-1.3 11-5" fill="none" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round"/>
+  <path id="lock-fill-pin-stem" d="M48 72v8" fill="none" stroke="#0DD5B2" stroke-width="3" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,118 @@
+$mint: #0dd5b2;
+$ink: #19362d;
+$background: #f5f6f1;
+
+html,
+body,
+#root {
+    height: 100%;
+    margin: 0;
+    background: var(--commonity-background, #{$background});
+}
+
+body {
+    overscroll-behavior: none;
+    -webkit-font-smoothing: antialiased;
+}
+
+.commonity-page {
+    min-height: 100dvh;
+    background-image: radial-gradient(ellipse at 50% 45%, rgba($mint, 0.045), transparent 65%);
+}
+
+.commonity-brand,
+.commonity-theme-toggle,
+.commonity-saved-empty-action {
+    transition: opacity 180ms ease, transform 180ms ease, background-color 180ms ease;
+
+    &:focus-visible {
+        outline-offset: 5px;
+        outline: 2px solid var(--commonity-ink, #{$ink});
+    }
+}
+
+body,
+.commonity-page,
+.commonity-wordmark,
+.commonity-heading,
+.commonity-subtitle,
+.commonity-brand-tagline,
+.commonity-location-text,
+.commonity-bottom-navigation,
+.commonity-navigation,
+.commonity-navigation-label,
+.commonity-post-card,
+.commonity-post-community-icon,
+.commonity-post-community-name,
+.commonity-post-meta,
+.commonity-post-tag,
+.commonity-post-tag-label,
+.commonity-post-paragraph,
+.commonity-post-footer,
+.commonity-post-vote-controls,
+.commonity-post-vote-score,
+.commonity-post-replies-label,
+.commonity-post-demo-reply,
+.commonity-post-reply-author,
+.commonity-post-reply-content,
+.commonity-post-reply-demo-label,
+.commonity-privacy-text,
+.commonity-saved-empty,
+.commonity-saved-empty-icon-frame,
+.commonity-saved-empty-title,
+.commonity-saved-empty-description,
+.commonity-saved-empty-action-text,
+.commonity-notice,
+.commonity-icon {
+    transition: color 220ms ease, border-color 220ms ease, background-color 220ms ease, box-shadow 220ms ease;
+}
+
+.commonity-stage {
+    animation: commonity-arrive 420ms ease-out both;
+}
+
+@media (hover: hover) {
+    .commonity-brand:hover {
+        opacity: 0.8;
+    }
+
+    .commonity-saved-empty-action:hover {
+        transform: translateY(-2px);
+    }
+}
+
+@media (min-width: 768px) and (max-width: 980px) {
+    .commonity-location {
+        display: none;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .commonity-stage {
+        animation: none;
+    }
+
+    .commonity-brand,
+    .commonity-theme-toggle,
+    .commonity-saved-empty-action {
+        transition: none;
+    }
+
+    *,
+    *::before,
+    *::after {
+        transition: none !important;
+    }
+}
+
+@keyframes commonity-arrive {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,66 @@
+<svg
+  fill="none"
+  width="96"
+  height="96"
+  role="img"
+  stroke="#0DD5B2"
+  viewBox="0 0 96 96"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  id="commonity-v9-c-brackets-white-pin"
+  class="commonity-v9-c-brackets-white-pin"
+  xmlns="http://www.w3.org/2000/svg"
+  aria-labelledby="c-brackets-white-pin-title c-brackets-white-pin-description"
+>
+  <title id="c-brackets-white-pin-title" class="c-brackets-white-pin-title">Commonity — Mint C and Brackets on a White Pin</title>
+  <desc id="c-brackets-white-pin-description" class="c-brackets-white-pin-description">A white locator pin containing a mint C, four circular brackets and a short mint stem, with a transparent outer background.</desc>
+  <path
+    stroke="none"
+    fill="#FFFFFF"
+    id="c-brackets-white-pin-body"
+    class="c-brackets-white-pin-body"
+    d="M48 10C29 10 15 24.5 15 43c0 18.5 15.5 33.5 33 46 17.5-12.5 33-27.5 33-46C81 24.5 67 10 48 10Z"
+  />
+  <g
+    stroke-width="2"
+    id="c-brackets-white-pin-circular-brackets"
+    class="c-brackets-white-pin-circular-brackets"
+  >
+    <path
+      id="c-brackets-white-pin-top-arc"
+      class="c-brackets-white-pin-top-arc"
+      d="M39.314776 26.665470A18.5 18.5 0 0 1 56.685224 26.665470"
+    />
+    <path
+      transform="rotate(90 48 43)"
+      id="c-brackets-white-pin-right-arc"
+      class="c-brackets-white-pin-right-arc"
+      d="M39.314776 26.665470A18.5 18.5 0 0 1 56.685224 26.665470"
+    />
+    <path
+      transform="rotate(180 48 43)"
+      id="c-brackets-white-pin-bottom-arc"
+      class="c-brackets-white-pin-bottom-arc"
+      d="M39.314776 26.665470A18.5 18.5 0 0 1 56.685224 26.665470"
+    />
+    <path
+      transform="rotate(270 48 43)"
+      id="c-brackets-white-pin-left-arc"
+      class="c-brackets-white-pin-left-arc"
+      d="M39.314776 26.665470A18.5 18.5 0 0 1 56.685224 26.665470"
+    />
+  </g>
+  <path
+    stroke-width="5.5"
+    id="c-brackets-white-pin-capital-c"
+    class="c-brackets-white-pin-capital-c"
+    transform="translate(48 43) scale(.8) translate(-48 -43)"
+    d="M58.5 34c-3.2-3.7-6.7-5-11-5C39.1 29 33 35.3 33 43s6.1 14 14.5 14c4.3 0 7.8-1.3 11-5"
+  />
+  <path
+    d="M48 72v8"
+    stroke-width="3"
+    id="c-brackets-white-pin-stem"
+    class="c-brackets-white-pin-stem"
+  />
+</svg>
